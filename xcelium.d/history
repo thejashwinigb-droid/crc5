@@ -1,0 +1,21 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(05Nov2026:00:00:50):( irun -access +rwc crc.sv tb.sv )
+s2::(05Nov2026:00:00:04):( irun -access +rwc crc.sv tb.sv )
+s3::(05Nov2026:00:00:57):( irun -access +rwc crc.sv tb.sv )
+s4::(05Nov2026:00:00:10):( irun -access +rwc crc.sv tb.sv )
+s5::(05Nov2026:00:00:12):( irun -access +rwc crc.sv tb.sv )
+s6::(05Nov2026:00:00:37):( irun -access +rwc crc.sv tb.sv )
+s7::(05Nov2026:00:00:04):( irun -access +rwc crc.sv tb.sv )
+s8::(05Nov2026:00:00:07):( irun -access +rwc crc.sv tb.sv )
+s9::(05Nov2026:00:00:18):( irun -access +rwc crc.sv tb.sv )
+s10::(05Nov2026:00:00:20):( irun -access +rwc crc.sv tb.sv )
+s11::(05Nov2026:00:00:22):( irun -access +rwc crc.sv tb.sv )
+s12::(05Nov2026:00:00:36):( irun -access +rwc crc.sv tb.sv )
+s13::(05Nov2026:00:00:43):( irun -access +rwc crc.sv tb.sv )
+s14::(05Nov2026:00:00:27):( irun -access +rwc crc.sv tb.sv )
+s15::(05Nov2026:00:00:44):( irun -access +rwc crc.sv tb.sv )
+s16::(05Nov2026:00:00:02):( irun -access +rwc crc.sv tb.sv )
+s17::(06Nov2026:15:40:35):( irun -access +rwc crc.sv tb.sv )

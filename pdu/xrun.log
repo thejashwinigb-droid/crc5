@@ -1,0 +1,69 @@
+xrun(64): 20.09-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s009: Started on Nov 23, 2026 at 00:01:04 IST
+irun
+	-access +rwc
+	ble_pdu_header_rx.sv
+	tb_rx.sv
+xrun: *W,NCEXDEP: Executable (irun) is deprecated. Use (xrun) instead.
+Recompiling... reason: file './ble_pdu_header_rx.sv' is newer than expected.
+	expected: Fri Nov 20 00:00:26 2026
+	actual:   Mon Nov 23 10:56:41 2026
+file: ble_pdu_header_rx.sv
+	module worklib.ble_pdu_header_rx:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb_ble_pdu_header_rx
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.ble_pdu_header_rx:sv <0x6a5a8e0c>
+			streams:  18, words: 11052
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              2       2
+		Registers:           55      55
+		Scalar wires:        21       -
+		Vectored wires:       8       -
+		Always blocks:        2       2
+		Initial blocks:       4       4
+		Pseudo assignments:  17      17
+	Writing initial simulation snapshot: worklib.tb_ble_pdu_header_rx:sv
+Loading snapshot worklib.tb_ble_pdu_header_rx:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /tools/cadence_march2021/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> run
+
+======================================
+ BLE PDU HEADER RX VERIFICATION
+======================================
+
+TEST 1: ADV_IND
+PASS: ADV_IND HEADER
+
+TEST 2: ADV_NONCONN_IND
+PASS: ADV_NONCONN_IND HEADER
+
+TEST 3: ACL LLID=01 CP=0
+PASS: ACL LLID=01 CP=0
+
+TEST 4: ACL LLID=10 CP=0
+PASS: ACL LLID=10 CP=0
+
+TEST 5: ACL LLID=11 CP=1
+PASS: ACL LLID=11 CP=1
+
+======================================
+ RX VERIFICATION SUMMARY
+======================================
+TOTAL PASS : 5
+TOTAL FAIL : 0
+RESULT: ALL RX TESTS PASSED
+======================================
+Simulation complete via $finish(1) at time 1 US + 0
+./tb_rx.sv:424         $finish;
+xcelium> exit
+TOOL:	xrun(64)	20.09-s009: Exiting on Nov 23, 2026 at 00:00:00 IST  (total: 00:-1:-4)

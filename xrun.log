@@ -1,0 +1,22 @@
+xrun(64): 20.09-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s009: Started on Nov 06, 2026 at 15:40:35 IST
+irun
+	-access +rwc
+	crc.sv
+	tb.sv
+xrun: *W,NCEXDEP: Executable (irun) is deprecated. Use (xrun) instead.
+Loading snapshot worklib.tb_serial_crc24:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /tools/cadence_march2021/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> run
+Processed bits = 80
+Computed CRC   = 0x1ae01e
+PASS: RX CRC match
+PASS: RX CRC mismatch detected
+--------------------------------
+ALL TESTS PASSED
+--------------------------------
+Simulation complete via $finish(1) at time 859 NS + 0
+./tb.sv:271         $finish;
+xcelium> exit
+TOOL:	xrun(64)	20.09-s009: Exiting on Nov 06, 2026 at 15:40:35 IST  (total: 00:00:00)
